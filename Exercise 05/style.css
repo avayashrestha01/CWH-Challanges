@@ -41,6 +41,7 @@ header nav ul li{
 header nav ul li:hover{
     background-color: rgba(212, 205, 205, 0.863);
     transform: scale(1.1) translateY(-5px);
+    box-shadow: 3px 3px 15px rgb(73, 73, 73);
 }
 
 header nav ul li:active{
@@ -132,15 +133,18 @@ footer{
     font-size: 4em;
 }
 
-.fixedpos a:hover{
+.fixedpos:hover{
     scale: 1.1;
     transform: translateY(-5px);
-    color: rgb(27, 27, 27);
-    position: relative;
 }
 
-.fixedpos a:active{
+.fixedpos:active{
     scale: 0.9;
+}
+
+.fixedpos a:hover{
+    color: rgb(27, 27, 27);
+    position: relative;
 }
 
 .fixedpos a:hover::before{
