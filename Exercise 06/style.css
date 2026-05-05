@@ -2,10 +2,50 @@
     padding: 0;
     margin: 0;
     border-style: border-box;
+    transition: 0.3s ease-in-out all;
 }
 
 body{
-    background-color: rgba(0, 255, 255, 0.368);
+    background-color: rgba(204, 236, 241, 0.368);
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: #fff9;
+    box-shadow: 0px 3px 15px gray;
+    border-bottom: 2px rgba(204, 204, 204, 0.845) solid;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap:  wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li{
+    list-style: none;
+    padding: 8px 24px;
+}
+
+header nav ul li:hover{
+    scale: 1.1;
+}
+
+header nav ul li a{
+    color: gray;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header nav ul li a:hover{
+    color: rgb(57, 57, 57);
 }
