@@ -1,36 +1,6 @@
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
+    border-style: none;
 }
 
-.cont {
-    padding: 50px;
-    margin: 100px;
-}
-
-.div {
-    min-height: 100px;
-    min-width: 100px;
-    position: absolute;
-    animation: rotate linear infinite;
-}
-
-.div:nth-child(1) {
-    background-color: red;
-    top: 10px;
-    transform: skewX(20deg);
-}
-
-.div:nth-child(2) {
-    background-color: rebeccapurple;
-    top: 110px;
-    left: 134px;
-    transform: skewX(-34deg);
-}
-
-.div:nth-child(3) {
-    background-color: rgb(70, 0, 0);
-    top: 57px;
-    left: 70px;
-    transform: rotate(59deg) skew(25deg, 11deg);
-}
