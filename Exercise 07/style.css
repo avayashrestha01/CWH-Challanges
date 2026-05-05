@@ -9,33 +9,28 @@
 }
 
 .div {
-    height: 100px;
-    width: 100px;
+    min-height: 100px;
+    min-width: 100px;
     position: absolute;
     animation: rotate linear infinite;
 }
 
 .div:nth-child(1) {
     background-color: red;
-    border-color: aqua 2px solid;
-    transform: skewy(20deg);
+    top: 10px;
+    transform: skewX(20deg);
 }
 
 .div:nth-child(2) {
     background-color: rebeccapurple;
-    transform: skewY(-20deg);
-    left: 250px;
+    top: 110px;
+    left: 134px;
+    transform: skewX(-34deg);
 }
 
 .div:nth-child(3) {
-    background-color: rgb(255, 255, 255);
-    transform: skewy(30deg);
-    top: 100px;
-    left: 250px;
-}
-
-.div:nth-child(4) {
-    background-color: blue;
-    transform: skewy(-20deg);
-    top: 110px;
+    background-color: rgb(70, 0, 0);
+    top: 10px;
+    left: 50px;
+    transform: skewY(20deg);
 }
