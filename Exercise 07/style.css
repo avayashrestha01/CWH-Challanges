@@ -30,7 +30,7 @@
 
 .div:nth-child(3) {
     background-color: rgb(70, 0, 0);
-    top: 10px;
-    left: 50px;
-    transform: skewY(20deg);
+    top: 57px;
+    left: 70px;
+    transform: rotate(59deg) skew(25deg, 11deg);
 }
