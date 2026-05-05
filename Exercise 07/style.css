@@ -1,11 +1,178 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border-style: none;
+    transition: 0.3s ease-in-out all;
 }
 
-body{
+body {
     background-color: rgba(86, 244, 244, 0.226);
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+    background-color: rgba(245, 245, 245, 0.697);
+    box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.638);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+header .logo img {
+    height: 80px;
+}
+
+header nav {
+    margin: 0 50px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    ;
+}
+
+header nav ul li a {
+    color: gray;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 12px 24px;
+}
+
+header nav ul li a:hover {
+    color: rgb(43, 43, 43);
+}
+
+main {
+    max-width: 95vw;
+    justify-self: center;
+    margin: 80px 30px;
+}
+
+main .cont-top {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 80px 0;
+}
+
+main .cont-top h1 {
+    color: rgb(38, 38, 38);
+    font-weight: 500;
+    max-width: 75%;
+    text-align: center;
+}
+
+main .cont-top h1 b {
+    color: black;
+}
+
+main .cont-top p {
+    color: rgb(69, 69, 69);
+    margin: 30px 0;
+    max-width: 80%;
+    text-align: center;
+}
+
+main .top-button {
+    background-color: rgb(0, 174, 200);
+    color: white;
+    font-weight: 550;
+    text-transform: uppercase;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+main .top-button:hover {
+    background-color: rgb(5, 176, 165);
+    transform: translateY(-5px);
+}
+
+main .top-button:active {
+    background-color: rgba(0, 64, 64, 0.493);
+    scale: 0.9;
+}
+
+.container{
+    min-width: 70vw;
+}
+
+.container .text-h {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    color: rgb(69, 69, 69);
+    margin: 30px 20px;
+}
+
+.container .text-h h2 {
+    font-weight: 500;
+}
+
+.container .text-h p {
+    font-size: 14px;
+}
+
+.container .grid-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container .grid-cont .card {
+    display: grid;
+    background-color: #fbe2b271;
+    padding: 24px;
+    box-shadow: 3px 3px 15px gray;
+    place-items: center;
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
+}
+
+.container a:hover{
+    color: rgb(231, 231, 231);
+}
+
+.dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.do{
+    padding: 12px 24px;
+    border-radius: 5px;
+    scale: 0.8;
+}
+
+.do:hover{
+    background-color: rgb(0, 187, 187);
+}
+
+div[class="32 do"] {
+    background-color: rgb(0, 174, 200);
+    margin-top: 30px;
+}
+
+div[class="64 do"] {
+    background-color: rgb(0, 200, 174);
+    margin-top: 30px;
+}
