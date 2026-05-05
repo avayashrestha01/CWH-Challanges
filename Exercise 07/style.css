@@ -53,9 +53,11 @@ header nav ul li a:hover {
 }
 
 main {
+    min-width: 60vw;
     max-width: 95vw;
     justify-self: center;
-    margin: 80px 30px;
+    margin: 80px auto;
+    padding: 0 20px;
 }
 
 main .cont-top {
@@ -106,10 +108,6 @@ main .top-button:active {
     scale: 0.9;
 }
 
-.container{
-    min-width: 70vw;
-}
-
 .container .text-h {
     display: flex;
     flex-wrap: wrap;
@@ -130,8 +128,7 @@ main .top-button:active {
 
 .container .grid-cont {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
