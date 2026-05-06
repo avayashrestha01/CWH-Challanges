@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+    transition: 0.3s ease;
+}
+
+.border{
+    background-color: aqua;
+    border: 5px solid black;
+    width: 80vw;
+    height: 80vh;
+    margin: 10vh auto;
+    position: relative;
+    box-shadow: 10px 10px 50px;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.area{
+    background-color: aqua;
+    width: 80vw;
+    position: relative;
+}
+
+.ball{
+    background-color: red;
+    height: 5vmax;
+    width: 5vmax;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    animation: bouncing 1s infinite cubic-bezier(0.71, -0.17, 1, 0.99) alternate 0s, ltor 7s infinite linear alternate 1s;
+    z-index: 1000;
+}
+
+.wall{
+    background-color: rgb(34, 255, 0);
+    height: 10vh;
+    border: 3px solid;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes bouncing{
+    from{
+        top: 20px;
+    }
+
+    to{
+        top: 65vh;
+    }
+}
+
+@keyframes ltor{
+    from{
+        left: 20px;
+    }
+
+    to{
+        left: calc(100% - 20px - 5vmax)
+    }
+}
+
+.cactus{
+    position: absolute;
+    background-color: limegreen;
+    z-index: -1;;
+}
+
+.left{
+    height: 80vh;
+    width: 20px;
+    top: 0;
+}
+
+.right{
+    height: 80vh;
+    width: 20px;
+    top: 0;
+    right: 0;
+}
+
+
+.md{
+    display: flex;
+    height: 100vh;
+    width: 90vw;
+}
+
+.nb{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    animation: grow 1s infinite cubic-bezier(0.25, 0.1, 0.81, -0.01) alternate;
+    margin: 50vw auto;
+}
+
+@keyframes grow{
+    from{
+        height: 20px;
+        width: 20px;
+    }
+
+    to{
+        height: 300px;
+        width: 300px;
+    }
+}
