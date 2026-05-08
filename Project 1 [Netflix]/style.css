@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    transition: 0.3s ease-in-out all;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+.main{
+    min-height: 100vh;
+    padding-bottom: 50px;
+    position: relative;
+    background-image: url(assets/img/home.png);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.main .blackbox{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+nav{
+    height: 84px;
+    max-width: 80vw;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.main nav span img{
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    display: block;
+}
+
+.main nav span button{
+    color: white;
+    font-size: 16px;
+    background-color:rgb(229, 9, 20);
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+#home{
+    color: white;
+    height: calc(100% - 100px);
+    text-align: center;
+    max-width: 36.75rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10vw auto;
+    position: relative;
+}
+
+#home h1{
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+#home h6{
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#home p{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#home .email{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+#home .email input[type="email"]{
+    background-color: rgba(0, 0, 0, 0.275);
+    border: 2px solid gray;
+    padding: 8px 20px;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+#home .email input[type="button"]{
+    background-color: rgb(229, 9, 20);
+    padding: 8px 32px;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#home .email input[type="button"]:hover, button:hover{
+    background-color: rgb(148, 1, 8);
+}
+
+.base{
+    border-top: solid 2px gray;
+    margin: 50px 20px;
+}
+
+.base h2{
+    color: white;
+}
+
+.trending .card-cont{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.trending .card-cont .cards{
+    height: 256px;
+    width: 158px;
+    background-color: rgba(128, 128, 128, 0.159);
+    border-radius: 24px;
+    margin: min(20px);
+}
+
+.mrtj .card-cont{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.mrtj .card-cont .cards{
+    background: linear-gradient(136deg, rgb(47, 0, 85), rgb(73, 0, 73));
+    height: 256px;
+    width: 300px;
+    padding: 16px;
+}
+
+.mrtj .card-cont .cards h2{
+    display: block;
+    margin: 20px auto;
+}
+
+
+.mrtj .card-cont .cards p{
+    color: gray;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+.cards:hover{
+    scale: 1.1;
+}
